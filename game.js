@@ -7,15 +7,17 @@ var userClickedPattern = [];
 
 $(".btn").click(function () {
   var userChosenColour = $(this).attr("id");
+
   userClickedPattern.push(userChosenColour);
 
 
   playSound(userChosenColour);
 });
 
-function playSound(name){
 
-  var audio=new Audio("sounds/"+name+".mp3");
+
+function playSound(name) {
+  var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 
 }
@@ -28,10 +30,12 @@ function nextSequence() {
 
   gamePattern.push(randomChosenColour);
 
-  $("#" + randomChosenColour)
-    .fadeIn(100)
-    .fadeOut(100);
+  $("#" + randomChosenColour).fadeIn(100).fadeOut(100);
 
-  var audio = Audio("sounds/" + randomChosenColour + ".mp3");
-  audio.play();
+ /* var audio = Audio("sounds/" + randomChosenColour + ".mp3");
+  audio.play();*/
+
+  playSound(randomChosenColour);
+
+
 }
