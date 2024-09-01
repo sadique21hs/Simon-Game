@@ -39,13 +39,10 @@ function nextSequence() {
 
 
 }
-
 function animatePress(currentColour){
-
-  $("#"+currentColour).addClass("pressed");
-  var self=$("#"+currentColour);
-
+$("#"+currentColour).addClass("pressed");
+  
   setTimeout(function(){
-    self.removeClass("pressed");
+  $("#"+currentColour).removeClass("pressed");
   },100);
 }
