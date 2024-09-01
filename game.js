@@ -39,3 +39,13 @@ function nextSequence() {
 
 
 }
+
+function animatePress(currentColour){
+
+  $("#"+currentColour).addClass("pressed");
+  var self=$("#"+currentColour);
+
+  setTimeout(function(){
+    self.removeClass
+  })
+}
