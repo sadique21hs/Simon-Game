@@ -17,18 +17,15 @@ function playSound(name) {
   audio.play();
 }
 
-var level=0;
+var level = 0;
 
-$(document).keypress(function(){
-     $("#level-title").text("Level"+level);
-     nextSequence();
-     started=true;
+$(document).keypress(function () {
+  if (!started) {
+    $("#level-title").text("Level" + level);
+    nextSequence();
+    started = true;
+  }
 });
-
-
-
-
-
 
 function nextSequence() {
   var randomnumber = Math.floor(Math.random() * 4);
@@ -46,10 +43,11 @@ function nextSequence() {
 
   playSound(randomChosenColour);
 }
-function animatePress(currentColour) {
-  $("#" + currentColour).addClass("pressed");
 
+function animatePress(currentColor) {
+  $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
-    $("#" + currentColour).removeClass("pressed");
-  } ,100);
+    $("#" + currentColor).removeClass("pressed");
+  }, 100);
 }
+
