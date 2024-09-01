@@ -46,6 +46,6 @@ function animatePress(currentColour){
   var self=$("#"+currentColour);
 
   setTimeout(function(){
-    self.removeClass
-  })
+    self.removeClass("pressed");
+  },100);
 }
