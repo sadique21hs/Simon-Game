@@ -20,7 +20,9 @@ function playSound(name) {
 var level=0;
 
 $(document).keypress(function(){
- 
+     $("#level-title").text("Level"+level);
+     nextSequence();
+     started=true;
 });
 
 
