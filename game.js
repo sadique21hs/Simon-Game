@@ -28,6 +28,9 @@ $(document).keypress(function () {
 });
 
 function nextSequence() {
+
+  level++;
+  $("#level-title").text("Level" + level);
   var randomnumber = Math.floor(Math.random() * 4);
 
   var randomChosenColour = buttonColours[randomnumber];
