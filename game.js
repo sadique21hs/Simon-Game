@@ -25,7 +25,9 @@ $(".btn").click(function () {
 });
 
 function nextSequence() {
+  var userClickedPattern = [];
   level++;
+
 
   $("#level-title").text("Level " + level);
 
