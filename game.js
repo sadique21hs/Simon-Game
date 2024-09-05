@@ -22,13 +22,11 @@ $(".btn").click(function () {
   playSound(userChosenColour);
   animatePress(userChosenColour);
   checkAnswer(userClickedPattern.length - 1);
-
 });
 
 function nextSequence() {
   var userClickedPattern = [];
   level++;
-
 
   $("#level-title").text("Level " + level);
 
@@ -66,15 +64,16 @@ function checkAnswer(currentLevel) {
     console.log("wrong");
     playSound("wrong");
     $("body").addClass("game-over");
-      setTimeout(function () {
-        $("body").removeClass("game-over");
-      }, 200);
+    setTimeout(function () {
+      $("body").removeClass("game-over");
+    }, 200);
 
-      
-      $("#level-title").text("Game Over, Press Any Key to Restart");
-      startOver();
+    $("#level-title").text("Game Over, Press Any Key to Restart");
+    startOver();
   }
 }
-function startOver(){
-
+function startOver() {
+  level = 0;
+  gamePattern = [];
+  started = false;
 }
