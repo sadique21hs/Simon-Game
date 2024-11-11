@@ -5,10 +5,14 @@
 The Simon Game is a simple yet challenging memory game in which players must repeat an increasingly long sequence of colors. Each level adds a new color to the sequence, and the player must remember and replicate it to advance to the next level. The game is built using HTML, CSS, and JavaScript with jQuery for DOM manipulation.
 
 ## Table of Contents
+- [Demo](#demo)
 - [Features](#features)
 - [Setup](#setup)
 - [How to Play](#how-to-play)
 - [Code Explanation](#code-explanation)
+  
+## Demo
+A live demo of the game can be found [here](#https://sadique21hs.github.io/Simon-Game/).
 
 ## Features
 - Interactive and user-friendly interface.
