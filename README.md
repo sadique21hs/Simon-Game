@@ -12,7 +12,7 @@ The Simon Game is a simple yet challenging memory game in which players must rep
 - [Code Explanation](#code-explanation)
   
 ## Demo
-A live demo of the game can be found [here](#https://sadique21hs.github.io/Simon-Game/).
+A live demo of the game can be found [here](https://sadique21hs.github.io/Simon-Game/)
 
 ## Features
 - Interactive and user-friendly interface.
